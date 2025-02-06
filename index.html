@@ -88,7 +88,8 @@
         <h2>Documentación</h2>
         <p>
             Encuentra toda la documentación necesaria para aprender a utilizar <strong>Simplify Biz</strong>.
-            <br>Aquí encontrarás <em>guías detalladas</em>, <em>preguntas frecuentes</em> y los <em>términos y condiciones</em> del servicio.
+            <br>Aquí encontrarás <em>guías detalladas</em>, <em>preguntas frecuentes</em> y los <em>términos y
+                condiciones</em> del servicio.
         </p>
         <ul>
             <li>
@@ -116,7 +117,9 @@
     <section id="Contact">
         <h2>Contacto</h2>
         <p>¿Tienes alguna consulta, sugerencia o necesitas más información?<br>
-            <br>¡Estamos aquí para ayudarte!<br>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            <br>¡Estamos aquí para ayudarte!<br>Completa el formulario y nos pondremos en contacto contigo lo antes
+            posible.
+        </p>
         <form action="tu_script_de_envio.php" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
@@ -134,29 +137,43 @@
     <section id="Download">
         <h2>Descargar Simplify Biz</h2>
         <p>Descarga la última versión de <strong>Simplify Biz</strong> y empieza a gestionar tu negocio de manera
-            eficiente.<br>La
-            aplicación está desarrollada en <em>Java 17</em> y puede ejecutarse en sistemas operativos <em>Windows, macOS y Linux.</em>
-            <br>Puedes elegir entre la versión instalable <em>(.exe)</em> para Windows o la versión portátil <em>(.jar)</em> que funciona en cualquier sistema operativo que tenga Java instalado.
+            eficiente.<br>
+            La aplicación está desarrollada en <em>Java 17</em> y es compatible con <em>Windows, macOS y Linux</em>.<br>
+            Puedes elegir entre la versión instalable <em>(.exe)</em> para Windows o la versión portátil <em>(.jar)</em>
+            compatible con cualquier sistema operativo con Java instalado.
         </p>
+
         <div class="download-options">
             <div class="download-card">
                 <i class="fab fa-windows"></i>
                 <h3>Windows</h3>
-                <a href="/downloads/simplify-biz-windows.exe" target="_blank" class="download-btn">Descargar (.exe)</a>
-                <a href="/downloads/simplify-biz-windows.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+                <a href="/buy" class="download-btn">Adquirir (.exe)</a>
+                <a href="/buy" class="download-btn">Adquirir(.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-apple"></i>
                 <h3>macOS</h3>
-                <a href="/downloads/simplify-biz-mac.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+                <a href="/buy" class="download-btn">Adquirir (.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-linux"></i>
                 <h3>Linux</h3>
-                <a href="/downloads/simplify-biz-linux.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+                <a href="/buy" class="download-btn">Adquirir (.jar)</a>
             </div>
         </div>
     </section>
+
+    <!-- Seccion Verificar compra -->
+    <section id="verify-purchase">
+        <h2>Verificar Compra</h2>
+        <p>Ingresa el código de compra que recibiste al realizar tu pedido para verificar su autenticidad y acceder a la descarga del producto.</p>
+        <form action="verificar_codigo.php" method="post">
+            <label for="codigoCompra">Introduce tu código de compra:</label>
+            <input type="text" id="codigoCompra" name="codigoCompra" required>
+            <button type="submit">Verificar</button>
+        </form>
+    </section>
+
 
     <!-- Sección de footer -->
     <footer>
