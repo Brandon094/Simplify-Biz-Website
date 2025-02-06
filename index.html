@@ -120,7 +120,7 @@
             <br>¡Estamos aquí para ayudarte!<br>Completa el formulario y nos pondremos en contacto contigo lo antes
             posible.
         </p>
-        <form action="/php/enviar_contacto.php" method="POST">
+        <form action="php/enviar_contacto.php" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
             <label for="email">Correo Electrónico:</label>
@@ -147,18 +147,18 @@
             <div class="download-card">
                 <i class="fab fa-windows"></i>
                 <h3>Windows</h3>
-                <a href="/buy.html" class="download-btn">Adquirir (.exe)</a>
-                <a href="/buy.html" class="download-btn">Adquirir(.jar)</a>
+                <a href="buy.html" class="download-btn">Adquirir (.exe)</a>
+                <a href="buy.html" class="download-btn">Adquirir(.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-apple"></i>
                 <h3>macOS</h3>
-                <a href="/buy.html" class="download-btn">Adquirir (.jar)</a>
+                <a href="buy.html" class="download-btn">Adquirir (.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-linux"></i>
                 <h3>Linux</h3>
-                <a href="/buy.html" class="download-btn">Adquirir (.jar)</a>
+                <a href="buy.html" class="download-btn">Adquirir (.jar)</a>
             </div>
         </div>
     </section>
@@ -167,7 +167,7 @@
     <section id="verify-purchase">
         <h2>Verificar Compra</h2>
         <p>Ingresa el código de compra que recibiste al realizar tu pedido para verificar su autenticidad y acceder a la descarga del producto.</p>
-        <form action="/php/verificar_codigo.php" method="post">
+        <form action="php/verificar_codigo.php" method="post">
             <label for="codigoCompra">Introduce tu código de compra:</label>
             <input type="text" id="codigoCompra" name="codigoCompra" required>
             <button type="submit">Verificar</button>
@@ -206,6 +206,6 @@
     </footer>
 
 </body>
-<script src="/src/js/index.js"></script>
+<script src="src/js/index.js"></script>
 
 </html>
