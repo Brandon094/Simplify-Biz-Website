@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="/src/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/mediaMax768.css">
+    <title>Simplify Biz</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Botón de menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
+        </button>
+
+        <!-- Contenedor de la lista de enlaces -->
+        <div class="nav-links">
+            <ul>
+                <li><a href="#AboutUs"><i class="fas fa-users"></i> Sobre nosotros</a></li>
+                <li><a href="#Document"><i class="fas fa-file-alt"></i> Documentación</a></li>
+                <li><a href="#Contact"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                <li><a href="#Download"><i class="fas fa-download"></i> Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Cabecera de la pagina -->
+    <header id="header">
+        <img src="/src/img/icon.ico" alt="Logo Simplify Biz">
+        <div>
+            <h1>Simplify Biz</h1>
+            <p>Gestiona tu negocio de manera fácil, rápida y eficiente.</p>
+        </div>
+    </header>
+
+    <!-- Sección de Sobre nosotros -->
+    <section id="AboutUs">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En <strong>Simplify Biz</strong> nos dedicamos a desarrollar soluciones tecnológicas innovadoras
+                        que permiten a
+                        las
+                        pequeñas y medianas empresas gestionar su negocio de manera más eficiente. Nuestro software está
+                        diseñado para ser intuitivo, flexible y accesible para todos los usuarios, sin importar su nivel
+                        de
+                        experiencia.</p>
+                    <p>Creemos que la tecnología debe ser una herramienta para facilitar el día a día de los
+                        emprendedores.
+                        Por eso, nuestro objetivo es ofrecer una plataforma completa, pero sencilla de usar, que te
+                        permita
+                        gestionar inventarios, ventas, productos y clientes desde un solo lugar.</p>
+                    <p>Con <strong>Simplify Biz</strong>, tu negocio está a solo un clic de distancia de alcanzar su
+                        máximo potencial.</p>
+                    <a href="#Download" class="cta-button">Prueba Simplify Biz</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://blog.bsworkspaces.com/wp-content/uploads/2020/09/Equipos_De-Trabajo_Exitosos-1024x610.png"
+                        alt="Equipo de Simplify Biz">
+                </div>
+            </div>
+            <!-- Estadisticas -->
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>1,000+</h3>
+                    <p>Empresas confían en nosotros</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Satisfacción del cliente</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Soporte técnico disponible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Documentación -->
+    <section id="Document">
+        <h2>Documentación</h2>
+        <p>
+            Encuentra toda la documentación necesaria para aprender a utilizar <strong>Simplify Biz</strong>.
+            <br>Aquí encontrarás <em>guías detalladas</em>, <em>preguntas frecuentes</em> y los <em>términos y condiciones</em> del servicio.
+        </p>
+        <ul>
+            <li>
+                <a href="/docs/guia_usuario.pdf" target="_blank">
+                    <i class="fas fa-book"></i> Guía de usuario
+                </a>
+                <p></i>Aprende paso a paso cómo utilizar todas las funciones de Simplify Biz.</p>
+            </li>
+            <li>
+                <a href="/docs/preguntas_frecuentes.pdf" target="_blank">
+                    <i class="fas fa-question-circle"></i> Preguntas frecuentes
+                </a>
+                <p>Respuestas a las dudas más comunes sobre el uso de la plataforma.</p>
+            </li>
+            <li>
+                <a href="/docs/terminos_condiciones.pdf" target="_blank">
+                    <i class="fas fa-file-contract"></i> Términos y condiciones
+                </a>
+                <p>Consulta las normas y políticas de uso de Simplify Biz.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="Contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna consulta, sugerencia o necesitas más información?<br>
+            <br>¡Estamos aquí para ayudarte!<br>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <form action="tu_script_de_envio.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección Descargar -->
+    <section id="Download">
+        <h2>Descargar Simplify Biz</h2>
+        <p>Descarga la última versión de <strong>Simplify Biz</strong> y empieza a gestionar tu negocio de manera
+            eficiente.<br>La
+            aplicación está desarrollada en <em>Java 17</em> y puede ejecutarse en sistemas operativos <em>Windows, macOS y Linux.</em>
+            <br>Puedes elegir entre la versión instalable <em>(.exe)</em> para Windows o la versión portátil <em>(.jar)</em> que funciona en cualquier sistema operativo que tenga Java instalado.
+        </p>
+        <div class="download-options">
+            <div class="download-card">
+                <i class="fab fa-windows"></i>
+                <h3>Windows</h3>
+                <a href="/downloads/simplify-biz-windows.exe" target="_blank" class="download-btn">Descargar (.exe)</a>
+                <a href="/downloads/simplify-biz-windows.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+            </div>
+            <div class="download-card">
+                <i class="fab fa-apple"></i>
+                <h3>macOS</h3>
+                <a href="/downloads/simplify-biz-mac.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+            </div>
+            <div class="download-card">
+                <i class="fab fa-linux"></i>
+                <h3>Linux</h3>
+                <a href="/downloads/simplify-biz-linux.jar" target="_blank" class="download-btn">Descargar (.jar)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Enlaces de navegación -->
+            <div class="links">
+                <h3><i class="fas fa-bars"></i> Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#AboutUs"><i class="fas fa-users"></i> Sobre nosotros</a></li>
+                    <li><a href="#Document"><i class="fas fa-file-alt"></i> Documentación</a></li>
+                    <li><a href="#Contact"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                    <li><a href="#Download"><i class="fas fa-download"></i> Descargar</a></li>
+                </ul>
+            </div>
+
+            <!-- Enlaces a redes sociales -->
+            <div class="socials">
+                <h3><i class="fas fa-globe"></i> Redes Sociales</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <p id="copy">&copy; 2025 Simplify Biz. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+<script src="/src/js/index.js"></script>
+
+</html>
