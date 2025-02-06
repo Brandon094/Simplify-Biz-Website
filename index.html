@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaMax768.css">
     <title>Simplify Biz</title>
@@ -31,7 +31,7 @@
     </nav>
     <!-- Cabecera de la pagina -->
     <header id="header">
-        <img src="/img/icon.ico" alt="Logo Simplify Biz">
+        <img src="img/icon.ico" alt="Logo Simplify Biz">
         <div>
             <h1>Simplify Biz</h1>
             <p>Gestiona tu negocio de manera fácil, rápida y eficiente.</p>
@@ -58,7 +58,7 @@
                         gestionar inventarios, ventas, productos y clientes desde un solo lugar.</p>
                     <p>Con <strong>Simplify Biz</strong>, tu negocio está a solo un clic de distancia de alcanzar su
                         máximo potencial.</p>
-                    <a href="#Download" class="cta-button">Prueba Simplify Biz</a>
+                    <a href="#Download" class="cta-button">Adquiere Simplify Biz</a>
                 </div>
                 <div class="about-image">
                     <img src="https://blog.bsworkspaces.com/wp-content/uploads/2020/09/Equipos_De-Trabajo_Exitosos-1024x610.png"
@@ -120,7 +120,7 @@
             <br>¡Estamos aquí para ayudarte!<br>Completa el formulario y nos pondremos en contacto contigo lo antes
             posible.
         </p>
-        <form action="tu_script_de_envio.php" method="POST">
+        <form action="/php/enviar_contacto.php" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
             <label for="email">Correo Electrónico:</label>
@@ -147,18 +147,18 @@
             <div class="download-card">
                 <i class="fab fa-windows"></i>
                 <h3>Windows</h3>
-                <a href="/buy" class="download-btn">Adquirir (.exe)</a>
-                <a href="/buy" class="download-btn">Adquirir(.jar)</a>
+                <a href="/buy.html" class="download-btn">Adquirir (.exe)</a>
+                <a href="/buy.html" class="download-btn">Adquirir(.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-apple"></i>
                 <h3>macOS</h3>
-                <a href="/buy" class="download-btn">Adquirir (.jar)</a>
+                <a href="/buy.html" class="download-btn">Adquirir (.jar)</a>
             </div>
             <div class="download-card">
                 <i class="fab fa-linux"></i>
                 <h3>Linux</h3>
-                <a href="/buy" class="download-btn">Adquirir (.jar)</a>
+                <a href="/buy.html" class="download-btn">Adquirir (.jar)</a>
             </div>
         </div>
     </section>
@@ -167,7 +167,7 @@
     <section id="verify-purchase">
         <h2>Verificar Compra</h2>
         <p>Ingresa el código de compra que recibiste al realizar tu pedido para verificar su autenticidad y acceder a la descarga del producto.</p>
-        <form action="verificar_codigo.php" method="post">
+        <form action="/php/verificar_codigo.php" method="post">
             <label for="codigoCompra">Introduce tu código de compra:</label>
             <input type="text" id="codigoCompra" name="codigoCompra" required>
             <button type="submit">Verificar</button>
