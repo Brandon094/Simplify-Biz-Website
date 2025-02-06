@@ -1,4 +1,4 @@
-![icono](ruta/del/icono.png) # Simplify-Biz-Website 🌐
+![icono](C:\Users\Dazac\OneDrive\Documents\GitHub\Simplify-Biz-Website\src\img\icon.ico) # Simplify-Biz-Website 🌐
 
 Este repositorio contiene la **página web oficial** de **Simplify Biz**, una solución de gestión empresarial diseñada para pequeñas y medianas empresas. A través de esta página, los usuarios pueden encontrar documentación sobre la aplicación, enlaces para la descarga y más información relevante sobre cómo usar Simplify Biz para optimizar su negocio.
 
