@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
         
         // Dirección de correo electrónico donde recibirás el mensaje
-        $to = "tu_correo@dominio.com";
+        $to = "dazace94@gmail.com";
         
         // Asunto del correo
         $mail_subject = "Nuevo mensaje de contacto: $subject";
