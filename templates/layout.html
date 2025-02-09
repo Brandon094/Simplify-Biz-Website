@@ -2,22 +2,46 @@
 <html lang="en">
 
 <head>
+    <!-- Definición de la codificación de caracteres para el documento -->
     <meta charset="UTF-8">
+    
+    <!-- Configuración para asegurar la compatibilidad con dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Vinculo a Google Fonts para utilizar la fuente Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Vinculo a la hoja de estilos de Font Awesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Agregar Font Awesome desde CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Icono de la página (favicon) -->
     <link rel="shortcut icon" href="/static/img/icon.ico" type="image/x-icon">
+    
+    <!-- Vinculo a los archivos de estilos CSS personalizado -->
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/mediaMax768.css">
+    <link rel="stylesheet" href="/static/css/aboutUs.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <link rel="stylesheet" href="/static/css/document.css">
+    <link rel="stylesheet" href="/static/css/download.css">
+    <link rel="stylesheet" href="/static/css/payment.css">
+    <link rel="stylesheet" href="/static/css/verifyCod.css">
+    
+    <!-- Título de la página, se permite modificar mediante bloques de Jinja -->
     <title>{% block title %}Simplify Biz{% endblock %}</title>
 </head>
 
 <body>
+    <!-- Barra de navegación principal -->
     <nav>
-        <!-- Botón de menú hamburguesa -->
+        <!-- Botón de menú hamburguesa (para dispositivos móviles) -->
         <button class="menu-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
+            <i class="fas fa-bars"></i> <!-- Icono del menú hamburguesa -->
         </button>
+        
+        <!-- Enlaces de navegación dentro de un contenedor -->
         <div class="nav-links">
             <ul>
                 <li><a href="{{url_for('index')}}"><i class="fas fa-users"></i> Sobre nosotros</a></li>
@@ -27,20 +51,25 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Sección de encabezado con logo y título -->
     <header id="header">
+        <!-- Imagen de logo de Simplify Biz -->
         <img src="/static/img/icon.ico" alt="Logo Simplify Biz">
+        
         <div>
-            <h1>Simplify Biz</h1>
-            <p>Gestiona tu negocio de manera fácil, rápida y eficiente.</p>
+            <h1>Simplify Biz</h1> <!-- Título principal -->
+            <p>Gestiona tu negocio de manera fácil, rápida y eficiente.</p> <!-- Subtítulo -->
         </div>
     </header>
     
-    <!-- Contenido específico de cada página -->
+    <!-- Contenido específico de cada página que se define mediante bloques de Jinja -->
     {% block content %}{% endblock %}
     
+    <!-- Pie de página -->
     <footer>
         <div class="footer-container">
-            <!-- Enlaces de navegación -->
+            <!-- Enlaces rápidos del sitio -->
             <div class="links">
                 <h3><i class="fas fa-bars"></i> Enlaces Rápidos</h3>
                 <ul>
@@ -51,7 +80,7 @@
                 </ul>
             </div>
 
-            <!-- Redes sociales -->
+            <!-- Sección de redes sociales -->
             <div class="socials">
                 <h3><i class="fas fa-globe"></i> Redes Sociales</h3>
                 <ul>
@@ -63,8 +92,11 @@
             </div>
         </div>
 
+        <!-- Mensaje de copyright con el año dinámico -->
         <p>&copy; <span id="year"></span> Simplify Biz. Todos los derechos reservados.</p>
     </footer>
+    
+    <!-- Vinculo al archivo JavaScript que maneja la lógica de la página -->
     <script src="/static/js/index.js"></script>
 </body>
 

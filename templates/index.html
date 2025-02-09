@@ -3,42 +3,50 @@
 {% block title %}Página Principal - Simplify Biz{% endblock %}
 
 {% block content %}
-    <!-- Sección Sobre Nosotros -->
+    <!-- Sección 'Sobre Nosotros' que describe la empresa y sus servicios -->
     <section id="AboutUs">
         <div class="container">
+            <!-- Contenedor principal con contenido de texto e imagen -->
             <div class="about-content">
+                <!-- Contenido de texto -->
                 <div class="about-text">
                     <h2>Sobre Nosotros</h2>
+                    <!-- Descripción de la empresa y su misión -->
                     <p>En <strong>Simplify Biz</strong> nos dedicamos a desarrollar soluciones tecnológicas innovadoras
-                        que permiten a
-                        las
-                        pequeñas y medianas empresas gestionar su negocio de manera más eficiente. Nuestro software está
+                        que permiten a las pequeñas y medianas empresas gestionar su negocio de manera más eficiente. Nuestro software está
                         diseñado para ser intuitivo, flexible y accesible para todos los usuarios, sin importar su nivel
-                        de
-                        experiencia.</p>
+                        de experiencia.</p>
                     <p>Creemos que la tecnología debe ser una herramienta para facilitar el día a día de los
-                        emprendedores.
-                        Por eso, nuestro objetivo es ofrecer una plataforma completa, pero sencilla de usar, que te
-                        permita
-                        gestionar inventarios, ventas, productos y clientes desde un solo lugar.</p>
+                        emprendedores. Por eso, nuestro objetivo es ofrecer una plataforma completa, pero sencilla de usar, que te
+                        permita gestionar inventarios, ventas, productos y clientes desde un solo lugar.</p>
                     <p>Con <strong>Simplify Biz</strong>, tu negocio está a solo un clic de distancia de alcanzar su
                         máximo potencial.</p>
+                    
+                    <!-- Botón de llamada a la acción (CTA) para descargar la aplicación -->
                     <a href="{{url_for('download')}}" class="cta-button">Adquiere Simplify Biz</a>
                 </div>
+                
+                <!-- Imagen que complementa la sección sobre la empresa -->
                 <div class="about-image">
                     <img src="/static/img/icon.ico" alt="Equipo de Simplify Biz">
                 </div>
             </div>
-             <!-- Estadisticas -->
-             <div class="about-stats">
+            
+            <!-- Sección de estadísticas con datos destacados -->
+            <div class="about-stats">
+                <!-- Estadística: número de empresas que confían en Simplify Biz -->
                 <div class="stat">
                     <h3>1,000+</h3>
                     <p>Empresas confían en nosotros</p>
                 </div>
+                
+                <!-- Estadística: porcentaje de satisfacción de los clientes -->
                 <div class="stat">
                     <h3>95%</h3>
                     <p>Satisfacción del cliente</p>
                 </div>
+                
+                <!-- Estadística: disponibilidad del soporte técnico -->
                 <div class="stat">
                     <h3>24/7</h3>
                     <p>Soporte técnico disponible</p>

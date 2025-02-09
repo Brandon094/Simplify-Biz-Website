@@ -8,13 +8,20 @@
         <h2>Validar Código de Descarga</h2>
         <p>Por favor, ingresa el código de validación enviado a tu correo para poder acceder a la descarga del software.</p>
 
+        <!-- Formulario para validar el código de descarga -->
         <form action="{{ url_for('validar_codigo') }}" method="post">
+            <!-- Campo para ingresar el código de validación -->
             <label for="codigo">Código de Validación:</label>
             <input type="text" id="codigo" name="codigo" required><br>
 
+            <!-- Campo oculto que contiene el código de validación enviado -->
+            <input type="hidden" name="codigo_validacion" value="{{ codigo }}">
+
+            <!-- Botón para enviar el código y validar -->
             <button type="submit">Validar Código</button>
         </form>
-        
+
+        <!-- Mensaje de validación (si existe) -->
         {% if mensaje_validacion %}
             <p>{{ mensaje_validacion }}</p>
         {% endif %}
