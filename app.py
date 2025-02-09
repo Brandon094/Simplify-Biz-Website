@@ -112,4 +112,5 @@ def validar_codigo():
     return render_template('verificar_codigo.html', mensaje_validacion=mensaje_validacion)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)), debug=True)
+
