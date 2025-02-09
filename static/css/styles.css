@@ -1,0 +1,778 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3 {
+    color: #2c3e50;
+    font-weight: 700;
+    /* Aumentadno el peso de la fuente para mejorar la visibilidad */
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo sutil al pasar el mouse */
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Estilos generales de la barra de navegación */
+nav {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de menú hamburguesa (oculto en desktop) */
+.menu-toggle {
+    display: none;
+    /* Oculto por defecto */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Contenedor de la lista de enlaces */
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links ul li a {
+    color: white;
+    font-size: 0.9em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+
+/* Cabecera */
+header#header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header#header img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    animation: float 3s ease-in-out infinite;
+}
+
+header#header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in;
+}
+
+header#header p {
+    margin: 10px 0 0;
+    font-size: 1.3em;
+    animation: fadeIn 2.5s ease-in;
+}
+
+/* Animaciones */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Seccion sobre nosotros */
+#AboutUs {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#AboutUs .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#AboutUs .about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#AboutUs .about-text {
+    flex: 1;
+}
+
+#AboutUs .about-text h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#AboutUs .about-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+#AboutUs .about-image {
+    flex: 1;
+    text-align: center;
+}
+
+#AboutUs .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Boton para probar la app*/
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    /* Añadido el cursor pointer para el boton */
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    transform: translateY(-5px);
+    /* Cambiado a -5px para mayor interactividad */
+}
+
+/* Estadisticas de descargas */
+.about-stats {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.about-stats .stat {
+    text-align: center;
+}
+
+.about-stats .stat h3 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.about-stats .stat p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Sección Documentación */
+#Document {
+    background-color: #ffffff;
+    /* Fondo blanco */
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Document h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-align: center;
+    font-weight: 700;
+}
+
+#Document p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de la lista */
+#Document ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* Elementos de la lista */
+#Document ul li {
+    margin-bottom: 20px;
+    display: flex;
+    /* Los elementos se alinean horizontalmente */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Enlaces */
+#Document ul li a {
+    padding: 15px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.85em;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    /* Ancho fijo para los enlaces */
+}
+
+#Document ul li a i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+#Document ul li a:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Descripciones */
+#Document ul li p {
+    flex: 1;
+    font-size: 0.8em;
+    color: #555;
+    margin-left: 20px;
+}
+
+/* Sección Contacto */
+#Contact {
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#Contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-align: center;
+}
+
+#Contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para el fondo del popup */
+.popup {
+    display: none; /* Ocultamos el popup por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Fondo oscuro que aparece cuando el popup está activo */
+.popup-overlay {
+    display: none; /* Ocultamos el overlay por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 20px;
+    border: #bdc3c7 solid;
+}
+
+/* Estilo para el contenido del popup */
+.popup-content {
+    position: relative;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo para el botón de cerrar el popup */
+.popup-close {
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.popup-close:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Mostrar el popup y overlay cuando la variable popup_visible es true */
+.popup-overlay,
+.popup {
+    display: block;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #ecf0f1;
+    /* Un gris claro suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 96%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Sección de Descarga */
+#Download {
+    background-color: #fff;
+    /* Fondo claro para destacar la sección */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#Download h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#Download p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    width: 85%;
+    /* Ancho del 70% */
+    text-align: left;
+    /* Texto centrado */
+    margin-left: auto;
+    /* Centrar el contenedor */
+    margin-right: auto;
+    /* Centrar el contenedor */
+}
+
+/* Contenedor de opciones de descarga */
+#Download .download-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de descarga */
+#Download .download-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Download .download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#Download .download-card i {
+    font-size: 3em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+#Download .download-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Botones de descarga */
+#Download .download-card .download-btn {
+    display: block;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#Download .download-card .download-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Sección de Verificación de Compra */
+#verify-purchase {
+    background-color: #fff;
+    /* Fondo claro para mantener uniformidad */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#verify-purchase h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#verify-purchase p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    width: 85%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor del formulario */
+#verify-purchase form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Campo de entrada */
+#codigoCompra {
+    padding: 12px;
+    width: 85%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#codigoCompra:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botón de verificación */
+#verify-purchase button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#verify-purchase button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 40px 20px 20px;
+    /* Padding reducido para un diseño más delgado */
+    text-align: center;
+    /* Alineación del texto */
+}
+
+/* Contenedor principal del footer */
+footer .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* Espacio entre las columnas */
+    align-items: center;
+    /* Centrar verticalmente */
+    flex-wrap: wrap;
+    /* Permitir que se apilen en móviles */
+    max-width: 1000px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centrar el contenedor */
+    padding: 0 20px;
+    /* Padding lateral */
+}
+
+/* Columna de enlaces de navegación */
+footer .footer-container .links {
+    text-align: left;
+    /* Alinear texto a la izquierda */
+}
+
+/* Columna de redes sociales */
+footer .footer-container .socials {
+    text-align: right;
+    /* Alinear texto a la derecha */
+}
+
+/* Títulos de las secciones */
+footer .footer-container h3 {
+    font-size: 1.2em;
+    /* Tamaño del título */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+    color: #fff;
+    /* Color del título */
+    font-weight: 400;
+    /* Grosor de la fuente */
+}
+
+/* Estilos comunes para enlaces de navegación y redes sociales */
+footer .footer-container .links ul,
+footer .footer-container .socials ul {
+    list-style: none;
+    /* Quitar viñetas de la lista */
+    padding: 0;
+    /* Quitar padding */
+    margin: 0;
+    /* Quitar margen */
+}
+
+footer .footer-container .links ul li,
+footer .footer-container .socials ul li {
+    margin: 10px 0;
+    /* Espacio entre elementos de la lista */
+}
+
+footer .footer-container .links ul li a,
+footer .footer-container .socials ul li a {
+    color: white;
+    /* Color del enlace */
+    text-decoration: none;
+    /* Quitar subrayado */
+    font-size: 0.7em;
+    /* Tamaño de la fuente */
+    display: inline-block;
+    /* Hacer que los enlaces sean bloques en línea */
+    padding: 8px 12px;
+    /* Padding para el área de hover */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Transiciones suaves */
+    width: 100%;
+    text-align: center;
+}
+
+footer .footer-container .links ul li a:hover,
+footer .footer-container .socials ul li a:hover {
+    color: #fff;
+    /* Cambiar color del texto al pasar el mouse */
+    background-color: #2980b9;
+}
+
+/* Texto de derechos de autor */
+footer p {
+    margin-top: 30px;
+    /* Espacio arriba del texto */
+    padding-top: 20px;
+    /* Espacio interno arriba */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* Línea divisoria sutil */
+    font-size: 0.8em;
+    /* Tamaño de la fuente */
+    color: #ccc;
+    /* Color del texto */
+}
