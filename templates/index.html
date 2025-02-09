@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block title %}Página Principal - Simplify Biz{% endblock %}
+
+{% block content %}
+    <!-- Sección Sobre Nosotros -->
+    <section id="AboutUs">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En <strong>Simplify Biz</strong> nos dedicamos a desarrollar soluciones tecnológicas innovadoras
+                        que permiten a
+                        las
+                        pequeñas y medianas empresas gestionar su negocio de manera más eficiente. Nuestro software está
+                        diseñado para ser intuitivo, flexible y accesible para todos los usuarios, sin importar su nivel
+                        de
+                        experiencia.</p>
+                    <p>Creemos que la tecnología debe ser una herramienta para facilitar el día a día de los
+                        emprendedores.
+                        Por eso, nuestro objetivo es ofrecer una plataforma completa, pero sencilla de usar, que te
+                        permita
+                        gestionar inventarios, ventas, productos y clientes desde un solo lugar.</p>
+                    <p>Con <strong>Simplify Biz</strong>, tu negocio está a solo un clic de distancia de alcanzar su
+                        máximo potencial.</p>
+                    <a href="{{url_for('download')}}" class="cta-button">Adquiere Simplify Biz</a>
+                </div>
+                <div class="about-image">
+                    <img src="/static/img/icon.ico" alt="Equipo de Simplify Biz">
+                </div>
+            </div>
+             <!-- Estadisticas -->
+             <div class="about-stats">
+                <div class="stat">
+                    <h3>1,000+</h3>
+                    <p>Empresas confían en nosotros</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Satisfacción del cliente</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Soporte técnico disponible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

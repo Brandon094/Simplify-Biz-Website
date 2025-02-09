@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}Descargar Simplify Biz - Simplify Biz{% endblock %}
+
+{% block content %}
+<!-- Sección Descargar -->
+<section id="Download">
+    <h2>Descargar Simplify Biz</h2>
+    <p>Descarga la última versión de <strong>Simplify Biz</strong> y empieza a gestionar tu negocio de manera
+        eficiente.<br>
+        La aplicación está desarrollada en <em>Java 17</em> y es compatible con <em>Windows, macOS y Linux</em>.<br>
+        Puedes elegir entre la versión instalable <em>(.exe)</em> para Windows o la versión portátil <em>(.jar)</em>
+        compatible con cualquier sistema operativo con Java instalado.
+    </p>
+
+    <div class="download-options">
+        <div class="download-card">
+            <i class="fab fa-windows"></i>
+            <h3>Windows</h3>
+            <!-- Redirige al pago antes de permitir la descarga -->
+            <a href="{{ url_for('payment', software='Windows') }}" class="download-btn">Adquirir (.exe)</a>
+            <a href="{{ url_for('payment', software='Windows') }}" class="download-btn">Adquirir (.jar)</a>
+        </div>
+        <div class="download-card">
+            <i class="fab fa-apple"></i>
+            <h3>macOS</h3>
+            <!-- Redirige al pago antes de permitir la descarga -->
+            <a href="{{ url_for('payment', software='macOS') }}" class="download-btn">Adquirir (.jar)</a>
+        </div>
+        <div class="download-card">
+            <i class="fab fa-linux"></i>
+            <h3>Linux</h3>
+            <!-- Redirige al pago antes de permitir la descarga -->
+            <a href="{{ url_for('payment', software='Linux') }}" class="download-btn">Adquirir (.jar)</a>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}Documentación - Simplify Biz{% endblock %}
+
+{% block content %}
+<!-- Sección Documentación -->
+<section id="Document">
+    <h2>Documentación</h2>
+    <p>
+        Encuentra toda la documentación necesaria para aprender a utilizar <strong>Simplify Biz</strong>.
+        <br>Aquí encontrarás <em>guías detalladas</em>, <em>preguntas frecuentes</em> y los <em>términos y
+            condiciones</em> del servicio.
+    </p>
+    <ul>
+        <li>
+            <a href="{{ url_for('static', filename='docs/Guia de uso Simplify Biz.pdf') }}" target="_blank">
+                <i class="fas fa-book"></i> Guía de usuario
+            </a>
+            <p>Aprende paso a paso cómo utilizar todas las funciones de Simplify Biz.</p>
+        </li>
+        <li>
+            <a href="{{ url_for('static', filename='docs/Documentacion Simplify Biz.pdf') }}" target="_blank">
+                <i class="fas fa-question-circle"></i> Documentación
+            </a>
+            <p>Respuestas a las dudas más comunes sobre el uso de la plataforma.</p>
+        </li>
+        <li>
+            <a href="{{ url_for('static', filename='docs/terminos_condiciones.pdf') }}" target="_blank">
+                <i class="fas fa-file-contract"></i> Términos y condiciones
+            </a>
+            <p>Consulta las normas y políticas de uso de Simplify Biz.</p>
+        </li>
+    </ul>
+</section>
+{% endblock %}

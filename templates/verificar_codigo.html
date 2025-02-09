@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}Validar Código - Simplify Biz{% endblock %}
+
+{% block content %}
+    <!-- Sección de Validación del Código -->
+    <section id="validar-codigo">
+        <h2>Validar Código de Descarga</h2>
+        <p>Por favor, ingresa el código de validación enviado a tu correo para poder acceder a la descarga del software.</p>
+
+        <form action="{{ url_for('validar_codigo') }}" method="post">
+            <label for="codigo">Código de Validación:</label>
+            <input type="text" id="codigo" name="codigo" required><br>
+
+            <button type="submit">Validar Código</button>
+        </form>
+        
+        {% if mensaje_validacion %}
+            <p>{{ mensaje_validacion }}</p>
+        {% endif %}
+    </section>
+{% endblock %}
