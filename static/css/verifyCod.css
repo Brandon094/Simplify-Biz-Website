@@ -1,0 +1,69 @@
+/* Sección de Verificación de Compra */
+#verify-purchase {
+    background-color: #fff;
+    /* Fondo claro para mantener uniformidad */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#verify-purchase h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#verify-purchase p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    width: 85%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor del formulario */
+#verify-purchase form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Campo de entrada */
+#codigoCompra {
+    padding: 12px;
+    width: 85%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#codigoCompra:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botón de verificación */
+#verify-purchase button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#verify-purchase button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}

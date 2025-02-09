@@ -1,0 +1,85 @@
+/* Sección de Descarga */
+#Download {
+    background-color: #fff;
+    /* Fondo claro para destacar la sección */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#Download h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+#Download p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    width: 85%;
+    /* Ancho del 70% */
+    text-align: left;
+    /* Texto centrado */
+    margin-left: auto;
+    /* Centrar el contenedor */
+    margin-right: auto;
+    /* Centrar el contenedor */
+}
+
+/* Contenedor de opciones de descarga */
+#Download .download-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de descarga */
+#Download .download-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Download .download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#Download .download-card i {
+    font-size: 3em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+#Download .download-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Botones de descarga */
+#Download .download-card .download-btn {
+    display: block;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#Download .download-card .download-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
