@@ -21,14 +21,14 @@ La **página web** tiene como objetivo principal proporcionar:
 
 ## Enlaces útiles 🌐
 
-- **Página web oficial**: [Visita la página web](https://brandon094.github.io/Simplify-Biz-Website/)
+- **Página web oficial**: [Visita la página web](https://simplify-biz-website.onrender.com/)
 - **Repositorio de la aplicación**: [Simplify Biz en GitHub](https://github.com/Brandon094/simplify-biz)
 - **Documentación**: Para más detalles sobre el proyecto y su uso, accede a la documentación completa:
-[Accede a la documentación](https://brandon094.github.io/Simplify-Biz-Website/docs/Documentacion%20Simplify%20Biz.pdf)
+[Accede a la documentación](https://simplify-biz-website.onrender.com/documentacion)
 
 ## Tecnologías utilizadas 🛠️
 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) **HTML5** 🖥️: Estructura de la página web.
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) **CSS3** 🎨: Estilo y diseño visual.
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) **JavaScript** 💻: Funcionalidades interactivas y dinámicas.
-- ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white) **PHP** 🔧: Lógica del servidor y procesamiento de formularios.
+- ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) **Python** 🔧: Lógica del servidor y procesamiento de formularios.
